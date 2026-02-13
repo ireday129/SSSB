@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
           className="flex items-center group"
         >
           <img
-            src="https://storage.googleapis.com/msgsndr/4X2JY0JipOsTk1oyWC4a/media/698f45a100849884fc42b332.png"
+            src="/sssb-logo.png"
             alt="SSSB Logo"
             className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
           />
