@@ -94,7 +94,7 @@ const Admin: React.FC = () => {
                 <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md border border-gray-100">
                     <div className="text-center mb-8">
                         <img src="/sssb-logo.png" alt="SSSB Logo" className="h-24 w-auto mx-auto mb-6" />
-                        <h1 className="text-2xl font-serif font-bold text-primary uppercase tracking-widest">Restricted Access</h1>
+                        <h1 className="text-2xl font-sans font-bold text-primary uppercase tracking-widest">Restricted Access</h1>
                         <p className="text-gray-500 text-sm mt-2">High Table clearance required.</p>
                     </div>
 
@@ -138,9 +138,7 @@ const Admin: React.FC = () => {
                             {isLoading ? 'Verifying Credentials...' : 'Authenticate'}
                         </button>
 
-                        <div className="text-center pt-4">
-                            <a href="/" className="text-gray-400 text-xs hover:text-primary transition-colors">Return to Society</a>
-                        </div>
+
                     </form>
                 </div>
             </div>
@@ -156,7 +154,7 @@ const Admin: React.FC = () => {
                         <ShieldCheck size={20} className="text-accent" />
                     </div>
                     <div>
-                        <h1 className="font-serif font-bold text-lg tracking-wide">High Table Console</h1>
+                        <h1 className="font-sans font-bold text-lg tracking-wide">High Table Console</h1>
                         <p className="text-[10px] text-accent uppercase tracking-[0.2em]">Administrator View</p>
                     </div>
                 </div>
@@ -175,7 +173,7 @@ const Admin: React.FC = () => {
             <main className="max-w-7xl mx-auto px-6 py-12">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
                     <div>
-                        <h2 className="text-3xl font-serif text-primary font-bold mb-2">Member Registry</h2>
+                        <h2 className="text-3xl font-sans text-primary font-bold mb-2">Member Registry</h2>
                         <p className="text-gray-500">Managing {MOCK_MEMBERS.length} active service bureaus.</p>
                     </div>
                     <div className="relative w-full md:w-96">
@@ -210,7 +208,7 @@ const Admin: React.FC = () => {
                                                 <div className="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center text-primary">
                                                     <User size={14} />
                                                 </div>
-                                                <span className="font-serif font-bold text-primary">{member.name}</span>
+                                                <span className="font-sans font-bold text-primary">{member.name}</span>
                                             </div>
                                         </td>
                                         <td className="px-6 py-4">

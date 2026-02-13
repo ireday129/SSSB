@@ -131,7 +131,7 @@ const Tickets: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-4 bg-primary text-white font-serif font-bold uppercase tracking-[0.3em] text-[11px] rounded-xl shadow-lg shadow-primary/20 hover:bg-accent hover:text-black hover:-translate-y-0.5 transition-all flex items-center justify-center"
+                  className="w-full py-4 bg-primary text-white font-sans font-bold uppercase tracking-[0.3em] text-[11px] rounded-xl shadow-lg shadow-primary/20 hover:bg-accent hover:text-black hover:-translate-y-0.5 transition-all flex items-center justify-center"
                 >
                   Dispatch Request <Send size={14} className="ml-3" />
                 </button>

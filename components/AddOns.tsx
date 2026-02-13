@@ -59,7 +59,7 @@ const AddOns: React.FC<AddOnsProps> = ({ onAddToCart }) => {
         <div className="w-16 h-16 bg-white border border-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
           <Zap className="text-accent w-8 h-8" />
         </div>
-        <h3 className="text-2xl font-serif text-primary mb-4 font-bold uppercase tracking-tight">Bespoke Bureau Solutions</h3>
+        <h3 className="text-2xl font-sans text-primary mb-4 font-bold uppercase tracking-tight">Bespoke Bureau Solutions</h3>
         <p className="text-gray-500 mb-8 max-w-lg mx-auto font-medium">Our development arm can build custom software specific to your bureau's workflow and internal architecture.</p>
         <button className="px-10 py-4 bg-white border border-primary text-primary rounded-xl uppercase tracking-widest text-[11px] font-bold hover:bg-accent hover:text-black transition-all shadow-lg shadow-primary/5">
           Request Consultation

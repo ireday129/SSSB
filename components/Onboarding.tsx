@@ -14,7 +14,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
     <div className="space-y-12">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-gray-100 pb-10">
         <div>
-          <h2 className="text-3xl font-serif text-primary mb-2 uppercase tracking-tight font-bold">The Initiation Process</h2>
+          <h2 className="text-3xl font-sans text-primary mb-2 uppercase tracking-tight font-bold">The Initiation Process</h2>
           <p className="text-gray-500 font-light italic">"Verification is the first step to trust."</p>
         </div>
         <div className="w-full md:w-80 space-y-3">
@@ -48,8 +48,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
           <div
             key={item.id}
             className={`group bg-white border transition-all duration-500 rounded-xl p-6 flex items-center justify-between shadow-sm ${item.completed
-                ? 'border-accent/20 bg-surface/50'
-                : 'border-gray-100 hover:border-accent/30'
+              ? 'border-accent/20 bg-surface/50'
+              : 'border-gray-100 hover:border-accent/30'
               }`}
           >
             <div className="flex items-center space-x-8">
@@ -77,8 +77,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
             <button
               onClick={() => onToggle(item.id)}
               className={`w-12 h-12 rounded-full border-2 flex items-center justify-center transition-all duration-500 hover:scale-105 ${item.completed
-                  ? 'bg-primary border-primary text-white shadow-md hover:bg-accent hover:text-black'
-                  : 'border-gray-100 hover:border-accent text-transparent hover:text-accent/40'
+                ? 'bg-primary border-primary text-white shadow-md hover:bg-accent hover:text-black'
+                : 'border-gray-100 hover:border-accent text-transparent hover:text-accent/40'
                 }`}
             >
               <Check size={24} strokeWidth={3} />

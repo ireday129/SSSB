@@ -9,7 +9,7 @@ const Trainings: React.FC = () => {
 
   const categories = ["All", "Tax Software Mastery", "Business Growth", "Technical Skills"];
 
-  const filteredVideos = TRAINING_VIDEOS.filter(v => 
+  const filteredVideos = TRAINING_VIDEOS.filter(v =>
     (selectedCategory === "All" || v.category === selectedCategory) &&
     v.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -21,11 +21,11 @@ const Trainings: React.FC = () => {
           <h2 className="text-3xl font-serif text-primary mb-2 font-bold uppercase tracking-tight">Archives & Intelligence</h2>
           <p className="text-gray-500 font-light italic">Master the craft. Scale the bureau.</p>
         </div>
-        
+
         <div className="relative w-full md:w-80">
-          <input 
-            type="text" 
-            placeholder="Search files..." 
+          <input
+            type="text"
+            placeholder="Search files..."
             className="w-full bg-surface border border-gray-100 rounded-lg px-4 py-3 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all text-primary"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -43,14 +43,13 @@ const Trainings: React.FC = () => {
             </h4>
             <div className="flex flex-col space-y-1">
               {categories.map(cat => (
-                <button 
+                <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`w-full text-left py-2 px-3 rounded text-[11px] uppercase tracking-widest font-bold transition-all border ${
-                    selectedCategory === cat 
-                    ? 'bg-primary text-white border-primary shadow-sm' 
-                    : 'border-transparent text-gray-500 hover:text-primary hover:bg-surface'
-                  }`}
+                  className={`w-full text-left py-2 px-3 rounded text-[11px] uppercase tracking-widest font-bold transition-all border ${selectedCategory === cat
+                      ? 'bg-primary text-white border-primary shadow-sm'
+                      : 'border-transparent text-gray-500 hover:text-primary hover:bg-surface'
+                    }`}
                 >
                   {cat}
                 </button>
@@ -59,20 +58,20 @@ const Trainings: React.FC = () => {
           </div>
 
           <div className="bg-surface border border-gray-100 rounded-xl p-6 space-y-6">
-             <h4 className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-serif font-bold">Verified Merits</h4>
-             <div className="flex flex-wrap gap-4">
-               {BADGES.map(badge => (
-                 <div key={badge.id} className="group relative">
-                   <div className="w-12 h-12 bg-white border border-gray-100 rounded-full flex items-center justify-center text-xl shadow-sm group-hover:border-accent transition-all">
-                     {badge.icon}
-                   </div>
-                   <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-40 bg-white border border-gray-100 p-3 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all text-center z-20">
-                     <p className="text-primary font-bold text-[11px] uppercase tracking-widest mb-1">{badge.name}</p>
-                     <p className="text-gray-500 text-[10px] leading-tight font-medium">{badge.description}</p>
-                   </div>
-                 </div>
-               ))}
-             </div>
+            <h4 className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-serif font-bold">Verified Merits</h4>
+            <div className="flex flex-wrap gap-4">
+              {BADGES.map(badge => (
+                <div key={badge.id} className="group relative">
+                  <div className="w-12 h-12 bg-white border border-gray-100 rounded-full flex items-center justify-center text-xl shadow-sm group-hover:border-accent transition-all">
+                    {badge.icon}
+                  </div>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-40 bg-white border border-gray-100 p-3 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all text-center z-20">
+                    <p className="text-primary font-bold text-[11px] uppercase tracking-widest mb-1">{badge.name}</p>
+                    <p className="text-gray-500 text-[10px] leading-tight font-medium">{badge.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </aside>
 
@@ -100,7 +99,7 @@ const Trainings: React.FC = () => {
                 </div>
                 <div>
                   <div className="flex items-center space-x-2 mb-1">
-                    <span className="text-[10px] uppercase tracking-widest text-accent font-serif font-bold">{video.category}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-accent font-sans font-bold">{video.category}</span>
                   </div>
                   <h4 className="text-primary group-hover:text-accent transition-colors font-bold text-lg leading-snug">{video.title}</h4>
                 </div>

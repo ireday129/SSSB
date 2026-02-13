@@ -90,7 +90,7 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
             <div className="bg-white border border-gray-100 rounded-2xl p-6 flex items-center justify-between shadow-sm">
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-1 font-bold">Network Standing</p>
-                <p className="text-xl text-primary font-serif font-bold">Elite (Top 5%)</p>
+                <p className="text-xl text-primary font-sans font-bold">Elite (Top 5%)</p>
               </div>
               <div className="p-3 bg-surface rounded-lg text-primary">
                 <Shield size={24} />

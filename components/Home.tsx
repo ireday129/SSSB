@@ -57,7 +57,7 @@ const Home: React.FC<HomeProps> = ({ user, onboardingProgress }) => {
             <div className={`mb-4 w-12 h-12 flex items-center justify-center text-accent bg-surface rounded-full border border-gray-50`}>
               {stat.icon}
             </div>
-            <div className="text-3xl font-serif font-bold text-primary mb-1">{stat.value}</div>
+            <div className="text-3xl font-sans font-bold text-primary mb-1">{stat.value}</div>
             <div className="text-[10px] uppercase tracking-[0.3em] text-gray-400 font-bold">{stat.label}</div>
           </div>
         ))}

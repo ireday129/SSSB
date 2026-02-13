@@ -65,7 +65,7 @@ const LandingPage: React.FC = () => {
                 </section>
             </main>
 
-            <footer className="border-t border-gray-100 py-10 text-center text-sm text-gray-400 font-serif bg-surface">
+            <footer className="border-t border-gray-100 py-10 text-center text-sm text-gray-400 font-sans bg-surface">
                 <div className="mb-4">
                     <img
                         src="/sssb-logo.png"
