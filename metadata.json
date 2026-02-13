@@ -1,0 +1,8 @@
+{
+  "name": "Secret Society of Service Bureaus",
+  "description": "An exclusive membership platform prototype for tax software resellers with a minimal luxury aesthetic.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
