@@ -23,7 +23,7 @@ const Home: React.FC<HomeProps> = ({ user, onboardingProgress }) => {
           Welcome, <span className="text-accent underline decoration-accent/30 underline-offset-8">{user.name}</span>
         </h1>
         <p className="text-gray-500 text-lg max-w-2xl font-light italic">
-          "Exclusivity is the hallmark of the successful bureau. You are now at the table."
+          "Exclusivity is the hallmark of the successful service bureau. You are now at the table."
         </p>
       </div>
 
@@ -34,7 +34,7 @@ const Home: React.FC<HomeProps> = ({ user, onboardingProgress }) => {
             <h3 className="text-2xl font-serif text-primary mb-2 font-bold uppercase tracking-tight">Initiate Your Membership</h3>
             <p className="text-gray-500 max-w-md">Complete the onboarding checklist ({onboardingProgress}% complete) to unlock your full tier privileges and official society badge.</p>
           </div>
-          <a href="#onboarding" className="inline-flex items-center px-8 py-3 bg-primary text-white font-bold tracking-widest uppercase text-[11px] rounded transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 shadow-md">
+          <a href="#onboarding" className="inline-flex items-center px-8 py-3 bg-primary text-white font-bold tracking-widest uppercase text-[11px] rounded transition-all hover:bg-accent hover:text-black hover:scale-105 active:scale-95 shadow-md">
             Continue Onboarding <ChevronRight className="ml-2 w-4 h-4" />
           </a>
         </div>

@@ -25,9 +25,9 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
           <div className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
             <div className="h-32 bg-primary/5 relative border-b border-gray-50">
               <div className="absolute -bottom-10 left-8 w-24 h-24 bg-white border-4 border-white rounded-full flex items-center justify-center overflow-hidden shadow-lg">
-                 <div className="w-full h-full bg-surface flex items-center justify-center text-primary">
-                    <User size={48} />
-                 </div>
+                <div className="w-full h-full bg-surface flex items-center justify-center text-primary">
+                  <User size={48} />
+                </div>
               </div>
             </div>
             <div className="pt-14 pb-8 px-8 space-y-6">
@@ -51,7 +51,7 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
                 </div>
               </div>
 
-              <button className="w-full py-3 bg-surface hover:bg-gray-100 border border-gray-100 text-primary rounded-lg text-[11px] uppercase tracking-widest font-bold transition-all flex items-center justify-center">
+              <button className="w-full py-3 bg-surface hover:bg-accent hover:text-black border border-gray-100 text-primary rounded-lg text-[11px] uppercase tracking-widest font-bold transition-all flex items-center justify-center">
                 <Settings size={14} className="mr-2" /> Credentials Update
               </button>
             </div>

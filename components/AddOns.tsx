@@ -29,7 +29,7 @@ const AddOns: React.FC<AddOnsProps> = ({ onAddToCart }) => {
                 </div>
               </div>
             </div>
-            
+
             <div className="p-6 space-y-5 flex-grow flex flex-col">
               <div className="flex-grow">
                 <h4 className="text-primary font-bold text-lg leading-tight mb-2 group-hover:text-accent transition-colors">{product.title}</h4>
@@ -40,13 +40,13 @@ const AddOns: React.FC<AddOnsProps> = ({ onAddToCart }) => {
               </div>
 
               <div className="space-y-2 pt-4 border-t border-gray-50">
-                <button 
+                <button
                   onClick={onAddToCart}
-                  className="w-full py-3 bg-primary text-white font-bold text-[11px] uppercase tracking-widest rounded-lg flex items-center justify-center transition-all hover:bg-primary/90 shadow-md"
+                  className="w-full py-3 bg-primary text-white font-bold text-[11px] uppercase tracking-widest rounded-lg flex items-center justify-center transition-all hover:bg-accent hover:text-black shadow-md"
                 >
                   <ShoppingCart size={14} className="mr-2" /> Add to Vault
                 </button>
-                <button className="w-full py-3 bg-white border border-gray-100 text-gray-500 font-bold text-[11px] uppercase tracking-widest rounded-lg flex items-center justify-center transition-all hover:bg-surface">
+                <button className="w-full py-3 bg-white border border-gray-100 text-gray-500 font-bold text-[11px] uppercase tracking-widest rounded-lg flex items-center justify-center transition-all hover:bg-accent hover:text-black">
                   <ExternalLink size={14} className="mr-2" /> Details
                 </button>
               </div>
@@ -61,7 +61,7 @@ const AddOns: React.FC<AddOnsProps> = ({ onAddToCart }) => {
         </div>
         <h3 className="text-2xl font-serif text-primary mb-4 font-bold uppercase tracking-tight">Bespoke Bureau Solutions</h3>
         <p className="text-gray-500 mb-8 max-w-lg mx-auto font-medium">Our development arm can build custom software specific to your bureau's workflow and internal architecture.</p>
-        <button className="px-10 py-4 bg-white border border-primary text-primary rounded-xl uppercase tracking-widest text-[11px] font-bold hover:bg-primary hover:text-white transition-all shadow-lg shadow-primary/5">
+        <button className="px-10 py-4 bg-white border border-primary text-primary rounded-xl uppercase tracking-widest text-[11px] font-bold hover:bg-accent hover:text-black transition-all shadow-lg shadow-primary/5">
           Request Consultation
         </button>
       </div>

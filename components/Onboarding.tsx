@@ -23,7 +23,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
             <span className="text-accent">{progress}%</span>
           </div>
           <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
-            <div 
+            <div
               className="h-full bg-accent transition-all duration-700 cubic-bezier(0.4, 0, 0.2, 1) shadow-sm"
               style={{ width: `${progress}%` }}
             ></div>
@@ -45,28 +45,25 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
 
       <div className="grid grid-cols-1 gap-4">
         {items.map((item, idx) => (
-          <div 
-            key={item.id} 
-            className={`group bg-white border transition-all duration-500 rounded-xl p-6 flex items-center justify-between shadow-sm ${
-              item.completed 
-              ? 'border-accent/20 bg-surface/50' 
-              : 'border-gray-100 hover:border-accent/30'
-            }`}
+          <div
+            key={item.id}
+            className={`group bg-white border transition-all duration-500 rounded-xl p-6 flex items-center justify-between shadow-sm ${item.completed
+                ? 'border-accent/20 bg-surface/50'
+                : 'border-gray-100 hover:border-accent/30'
+              }`}
           >
             <div className="flex items-center space-x-8">
               <span className="font-serif text-gray-100 text-3xl font-bold w-12 text-center group-hover:text-accent/20 transition-colors">
                 {String(idx + 1).padStart(2, '0')}
               </span>
               <div className="flex items-center space-x-6">
-                <div className={`p-4 rounded-lg transition-all duration-500 ${
-                  item.completed ? 'bg-primary/5 text-primary' : 'bg-surface text-gray-400'
-                }`}>
+                <div className={`p-4 rounded-lg transition-all duration-500 ${item.completed ? 'bg-primary/5 text-primary' : 'bg-surface text-gray-400'
+                  }`}>
                   {item.type === 'video' ? <PlayCircle size={22} /> : item.type === 'form' ? <FileText size={22} /> : <Download size={22} />}
                 </div>
                 <div>
-                  <h4 className={`text-lg font-bold transition-all duration-500 ${
-                    item.completed ? 'text-gray-300 line-through decoration-primary/20' : 'text-primary'
-                  }`}>
+                  <h4 className={`text-lg font-bold transition-all duration-500 ${item.completed ? 'text-gray-300 line-through decoration-primary/20' : 'text-primary'
+                    }`}>
                     {item.title}
                   </h4>
                   <div className="flex items-center space-x-2">
@@ -76,14 +73,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
                 </div>
               </div>
             </div>
-            
-            <button 
+
+            <button
               onClick={() => onToggle(item.id)}
-              className={`w-12 h-12 rounded-full border-2 flex items-center justify-center transition-all duration-500 hover:scale-105 ${
-                item.completed 
-                ? 'bg-primary border-primary text-white shadow-md' 
-                : 'border-gray-100 hover:border-accent text-transparent hover:text-accent/40'
-              }`}
+              className={`w-12 h-12 rounded-full border-2 flex items-center justify-center transition-all duration-500 hover:scale-105 ${item.completed
+                  ? 'bg-primary border-primary text-white shadow-md hover:bg-accent hover:text-black'
+                  : 'border-gray-100 hover:border-accent text-transparent hover:text-accent/40'
+                }`}
             >
               <Check size={24} strokeWidth={3} />
             </button>
@@ -93,13 +89,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
 
       <div className="pt-10">
         <div className="aspect-video w-full max-w-5xl mx-auto rounded-2xl bg-gray-900 border border-gray-100 flex items-center justify-center group cursor-pointer relative overflow-hidden shadow-xl">
-          <img 
-            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80" 
-            alt="Briefing" 
-            className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-1000" 
+          <img
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+            alt="Briefing"
+            className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-1000"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
-          
+
           <div className="relative z-10 flex flex-col items-center space-y-6">
             <div className="w-20 h-20 bg-white text-primary rounded-full flex items-center justify-center shadow-2xl scale-100 group-hover:scale-110 transition-all duration-500">
               <PlayCircle size={40} fill="currentColor" />

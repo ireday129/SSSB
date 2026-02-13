@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
+
+@theme {
+    --color-primary: #224e33;
+    --color-accent: #ae8e33;
+    --color-darker: #1a2e23;
+    --color-card: #ffffff;
+    --color-surface: #f9fafb;
+
+    --font-sans: "League Spartan", sans-serif;
+    --font-serif: "Cinzel", serif;
+}
+
+@layer base {
+    body {
+        @apply bg-white text-darker antialiased;
+        scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-slate-50;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-accent rounded;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-[#8e742a];
+    }
+
+    /* Section offset for fixed navbar */
+    section {
+        scroll-margin-top: 6rem;
+    }
+}

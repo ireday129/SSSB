@@ -35,7 +35,7 @@ const Tickets: React.FC = () => {
             <p className="text-gray-500 text-sm leading-relaxed">
               Submit your request directly to the High Table. Our technical division is standing by to resolve any bureau logistical hurdles.
             </p>
-            
+
             <div className="space-y-4">
               {[
                 { label: "Technical Mastery", desc: "Software integrations & API assistance" },
@@ -55,7 +55,7 @@ const Tickets: React.FC = () => {
 
           <div className="bg-primary p-8 rounded-2xl text-white shadow-xl relative overflow-hidden group">
             <div className="absolute -right-4 -bottom-4 opacity-10 group-hover:scale-110 transition-transform duration-700">
-               <LifeBuoy size={120} />
+              <LifeBuoy size={120} />
             </div>
             <h4 className="font-serif text-xl mb-4 relative z-10">Direct Intelligence</h4>
             <p className="text-white/70 text-sm mb-6 relative z-10">For emergency escalations, please reference your High Table private key in the message.</p>
@@ -74,7 +74,7 @@ const Tickets: React.FC = () => {
                   <h3 className="text-2xl font-serif text-primary font-bold uppercase mb-2">Request Dispatched</h3>
                   <p className="text-gray-500 max-w-sm mx-auto">Your intelligence has been received. An associate will be in contact within the hour.</p>
                 </div>
-                <button 
+                <button
                   onClick={() => setSubmitted(false)}
                   className="text-accent uppercase text-[10px] font-bold tracking-[0.2em] border-b border-accent hover:text-primary hover:border-primary transition-all"
                 >
@@ -97,7 +97,7 @@ const Tickets: React.FC = () => {
                     <label className="text-[10px] uppercase tracking-widest text-gray-400 font-bold ml-1">Priority Level</label>
                     <div className="flex space-x-2">
                       {['Standard', 'Urgent', 'Tactical'].map((level) => (
-                        <button 
+                        <button
                           key={level}
                           type="button"
                           className="flex-1 py-3 text-[10px] uppercase font-bold tracking-widest rounded-xl border border-gray-100 hover:border-accent hover:text-accent text-gray-400 transition-all bg-surface"
@@ -111,8 +111,8 @@ const Tickets: React.FC = () => {
 
                 <div className="space-y-2">
                   <label className="text-[10px] uppercase tracking-widest text-gray-400 font-bold ml-1">Subject</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     placeholder="Brief description of the objective"
                     className="w-full bg-surface border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent text-primary transition-all"
                     required
@@ -121,7 +121,7 @@ const Tickets: React.FC = () => {
 
                 <div className="space-y-2">
                   <label className="text-[10px] uppercase tracking-widest text-gray-400 font-bold ml-1">Mission Details</label>
-                  <textarea 
+                  <textarea
                     rows={6}
                     placeholder="Explain the situation in detail..."
                     className="w-full bg-surface border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent text-primary transition-all resize-none"
@@ -129,9 +129,9 @@ const Tickets: React.FC = () => {
                   ></textarea>
                 </div>
 
-                <button 
+                <button
                   type="submit"
-                  className="w-full py-4 bg-primary text-white font-serif font-bold uppercase tracking-[0.3em] text-[11px] rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 hover:-translate-y-0.5 transition-all flex items-center justify-center"
+                  className="w-full py-4 bg-primary text-white font-serif font-bold uppercase tracking-[0.3em] text-[11px] rounded-xl shadow-lg shadow-primary/20 hover:bg-accent hover:text-black hover:-translate-y-0.5 transition-all flex items-center justify-center"
                 >
                   Dispatch Request <Send size={14} className="ml-3" />
                 </button>
