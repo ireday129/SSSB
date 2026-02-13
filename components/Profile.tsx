@@ -15,7 +15,7 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
   return (
     <div className="space-y-12">
       <div className="border-b border-gray-100 pb-10">
-        <h2 className="text-3xl font-serif text-primary mb-2 font-bold uppercase tracking-tight">Associate Dossier</h2>
+        <h2 className="text-3xl font-sans text-primary mb-2 font-bold uppercase tracking-tight">Associate Dossier</h2>
         <p className="text-gray-500 font-light italic">Your individual credentials and Standing within the Society.</p>
       </div>
 
@@ -32,7 +32,7 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
             </div>
             <div className="pt-14 pb-8 px-8 space-y-6">
               <div>
-                <h3 className="text-2xl font-serif text-primary font-bold">{user.name}</h3>
+                <h3 className="text-2xl font-sans text-primary font-bold">{user.name}</h3>
                 <p className="text-accent uppercase tracking-[0.2em] text-[10px] font-bold">Associate Tier I</p>
               </div>
 
@@ -61,7 +61,7 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
         {/* Achievement Grid */}
         <div className="lg:col-span-2 space-y-8">
           <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
-            <h4 className="text-xs uppercase tracking-[0.3em] text-gray-400 font-serif font-bold mb-8 border-b border-gray-50 pb-4">Badge Showcase</h4>
+            <h4 className="text-xs uppercase tracking-[0.3em] text-gray-400 font-sans font-bold mb-8 border-b border-gray-50 pb-4">Badge Showcase</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {BADGES.map(badge => (
                 <div key={badge.id} className="flex items-start space-x-4 p-5 bg-surface rounded-xl border border-transparent hover:border-accent/20 transition-all">
@@ -81,7 +81,7 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
             <div className="bg-white border border-gray-100 rounded-2xl p-6 flex items-center justify-between shadow-sm">
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-1 font-bold">Loyalty Tier</p>
-                <p className="text-xl text-primary font-serif font-bold">Gold Member</p>
+                <p className="text-xl text-primary font-sans font-bold">Gold Member</p>
               </div>
               <div className="p-3 bg-surface rounded-lg text-accent">
                 <Award size={24} />

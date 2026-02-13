@@ -11,7 +11,7 @@ const AddOns: React.FC<AddOnsProps> = ({ onAddToCart }) => {
   return (
     <div className="space-y-16">
       <div className="text-center space-y-4">
-        <h2 className="text-3xl font-serif text-primary uppercase tracking-[0.1em] font-bold">Premium Enhancements</h2>
+        <h2 className="text-3xl font-sans text-primary uppercase tracking-[0.1em] font-bold">Premium Enhancements</h2>
         <div className="w-16 h-1 bg-accent mx-auto rounded-full"></div>
         <p className="text-gray-500 font-light max-w-xl mx-auto italic">
           "The finest tools for the finest practitioners. Every advantage counts at the table."

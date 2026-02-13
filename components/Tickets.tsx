@@ -15,10 +15,10 @@ const Tickets: React.FC = () => {
     <div className="space-y-16">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-gray-100 pb-10">
         <div>
-          <h2 className="text-3xl font-serif text-primary mb-2 font-bold uppercase tracking-tight">Support & Logistics</h2>
+          <h2 className="text-3xl font-sans text-primary mb-2 font-bold uppercase tracking-tight">Support & Logistics</h2>
           <p className="text-gray-500 font-light italic">"Precision is our only standard. We solve what others cannot."</p>
         </div>
-        <div className="flex space-x-6 text-gray-400 text-[10px] uppercase tracking-widest font-bold font-serif">
+        <div className="flex space-x-6 text-gray-400 text-[10px] uppercase tracking-widest font-bold font-sans">
           <div className="flex items-center">
             <Clock className="w-4 h-4 mr-2 text-accent" /> Avg Response: 12m
           </div>
@@ -31,7 +31,7 @@ const Tickets: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
         <div className="lg:col-span-2 space-y-8">
           <div className="bg-surface border border-gray-100 rounded-2xl p-8 space-y-6 shadow-sm">
-            <h3 className="text-xl font-serif text-primary font-bold uppercase tracking-tight">Open Channels</h3>
+            <h3 className="text-xl font-sans text-primary font-bold uppercase tracking-tight">Open Channels</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
               Submit your request directly to the High Table. Our technical division is standing by to resolve any bureau logistical hurdles.
             </p>
@@ -57,7 +57,7 @@ const Tickets: React.FC = () => {
             <div className="absolute -right-4 -bottom-4 opacity-10 group-hover:scale-110 transition-transform duration-700">
               <LifeBuoy size={120} />
             </div>
-            <h4 className="font-serif text-xl mb-4 relative z-10">Direct Intelligence</h4>
+            <h4 className="font-sans text-xl mb-4 relative z-10">Direct Intelligence</h4>
             <p className="text-white/70 text-sm mb-6 relative z-10">For emergency escalations, please reference your High Table private key in the message.</p>
             <div className="text-[10px] uppercase tracking-[0.3em] font-bold text-accent">Active Protocol: LVL 2</div>
           </div>
@@ -71,7 +71,7 @@ const Tickets: React.FC = () => {
                   <CheckCircle size={48} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-serif text-primary font-bold uppercase mb-2">Request Dispatched</h3>
+                  <h3 className="text-2xl font-sans text-primary font-bold uppercase mb-2">Request Dispatched</h3>
                   <p className="text-gray-500 max-w-sm mx-auto">Your intelligence has been received. An associate will be in contact within the hour.</p>
                 </div>
                 <button

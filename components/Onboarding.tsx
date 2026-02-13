@@ -18,7 +18,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
           <p className="text-gray-500 font-light italic">"Verification is the first step to trust."</p>
         </div>
         <div className="w-full md:w-80 space-y-3">
-          <div className="flex justify-between text-[10px] tracking-[0.3em] text-gray-400 font-serif uppercase font-bold">
+          <div className="flex justify-between text-[10px] tracking-[0.3em] text-gray-400 font-sans uppercase font-bold">
             <span>Progress</span>
             <span className="text-accent">{progress}%</span>
           </div>
@@ -37,7 +37,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
             <CheckCircle className="w-7 h-7" />
           </div>
           <div>
-            <p className="text-primary font-serif tracking-widest uppercase text-lg font-bold">Initiation Complete</p>
+            <p className="text-primary font-sans tracking-widest uppercase text-lg font-bold">Initiation Complete</p>
             <p className="text-gray-500 text-sm">Your credentials have been verified. You now hold associate clearance.</p>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
               }`}
           >
             <div className="flex items-center space-x-8">
-              <span className="font-serif text-gray-100 text-3xl font-bold w-12 text-center group-hover:text-accent/20 transition-colors">
+              <span className="font-sans text-gray-100 text-3xl font-bold w-12 text-center group-hover:text-accent/20 transition-colors">
                 {String(idx + 1).padStart(2, '0')}
               </span>
               <div className="flex items-center space-x-6">
@@ -67,7 +67,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
                     {item.title}
                   </h4>
                   <div className="flex items-center space-x-2">
-                    <span className="text-[10px] text-gray-400 uppercase tracking-[0.2em] font-serif font-bold">{item.type}</span>
+                    <span className="text-[10px] text-gray-400 uppercase tracking-[0.2em] font-sans font-bold">{item.type}</span>
                     {item.completed && <span className="text-[10px] text-accent uppercase tracking-widest font-bold">— VERIFIED</span>}
                   </div>
                 </div>
@@ -101,7 +101,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ items, onToggle, progress }) =>
               <PlayCircle size={40} fill="currentColor" />
             </div>
             <div className="text-center">
-              <h4 className="text-white font-serif text-2xl tracking-wide uppercase font-bold">The Society: Visionary Session</h4>
+              <h4 className="text-white font-sans text-2xl tracking-wide uppercase font-bold">The Society: Visionary Session</h4>
               <p className="text-accent text-xs tracking-[0.4em] mt-2 font-bold uppercase">Classification: REQUIRED</p>
             </div>
           </div>
